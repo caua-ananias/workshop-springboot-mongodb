@@ -55,40 +55,6 @@ GET /posts/{id} - Busca post por ID
 GET /posts/titlesearch?text={texto} - Busca posts por título
 GET /posts/fullsearch?text={texto}&minDate={data}&maxDate={data} - Busca avançada
 
-## 📊 Modelos de Dados
-
-### Usuário
-json
-{
-"id": "string",
-"name": "string",
-"email": "string"
-}
-
-### Post
-json
-{
-"id": "string",
-"date": "date",
-"title": "string",
-"body": "string",
-"author": {
-"id": "string",
-"name": "string"
-},
-"comments": [
-{
-"text": "string",
-"date": "date",
-"author": {
-"id": "string",
-"name": "string"
-}
-}
-]
-}
-
-
 ## 🔧 Configuração
 O MongoDB deve estar rodando em:
 mongodb://localhost:27017/workshop_mongo
